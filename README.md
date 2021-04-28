@@ -35,3 +35,6 @@ import PyPanda
 PyPandaClient = PyPanda.BitPandaProClass
 print(PyPandaClient.getCurrentPrices())
 ```
+---
+### Contact
+To report issues, bugs, docu corrections or to propose new features use preferably Github Issues.
