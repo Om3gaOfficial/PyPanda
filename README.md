@@ -38,7 +38,8 @@ print(PyPandaClient.getCurrentPrices())
 ```
 ---
 ### Latest changes
-N/A
+
+Nothing here yet
 ---
 ### Contact
 To report issues, bugs, docu corrections or to propose new features use preferably [Github Issues](https://github.com/Om3gaOfficial/PyPanda/issues).
