@@ -37,5 +37,8 @@ PyPandaClient = PyPanda.BitPandaProClass
 print(PyPandaClient.getCurrentPrices())
 ```
 ---
+### Latest changes
+N/A
+---
 ### Contact
 To report issues, bugs, docu corrections or to propose new features use preferably [Github Issues](https://github.com/Om3gaOfficial/PyPanda/issues).
