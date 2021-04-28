@@ -14,4 +14,24 @@ The `main.py` file uses only two liberies at the moment.
  - json (implemented in Python)
 ---
 ### How to use
-I am currently working to publish this libery on [PyPi](https://pypi.org/). Until then please just clone the Github Repo or download the `main.py` file.
+#### Installation
+I am currently working to publish this libery on [PyPi](https://pypi.org/) then you should be able to use `pip install pypanda`. Until then please just clone the Github Repo or use `main.py` file.
+
+#### Using the libery
+The libery currently just supports the Bitpanda API completly. The implementation of the Bitpanda Pro API will come in future versions.
+
+##### Bitpanda
+```
+import PyPanda
+
+PyPandaClient = PyPanda.BitPandaClass
+print(PyPandaClient.getWallets("APIKey", True))
+```
+
+#### Bitpanda Pro
+```
+import PyPanda
+  
+PyPandaClient = PyPanda.BitPandaProClass
+print(PyPandaClient.getCurrentPrices())
+```
