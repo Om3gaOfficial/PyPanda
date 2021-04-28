@@ -9,14 +9,15 @@
 
 ---
 ### Liberies used
-The `main.py` file uses only two liberies at the moment.
+The `pypanda.py` file uses only two liberies at the moment.
 
  - [requests](https://pypi.org/project/requests/)
  - json (implemented in Python)
 ---
 ### How to use
 #### Installation
-I am currently working to publish this libery on [PyPi](https://pypi.org/) then you should be able to use `pip install pypanda`. Until then please just clone the Github Repo or use `main.py` file.
+I am currently working to publish this libery on [PyPi](https://pypi.org/) then you should be able to use `pip install pypanda`. Until then please just clone the Github Repo or use `pypanda
+.py` file.
 Please be sure that you have installed the liberies listed above
 
 #### Using the libery
