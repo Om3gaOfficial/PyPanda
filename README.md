@@ -16,6 +16,7 @@ The `main.py` file uses only two liberies at the moment.
 ### How to use
 #### Installation
 I am currently working to publish this libery on [PyPi](https://pypi.org/) then you should be able to use `pip install pypanda`. Until then please just clone the Github Repo or use `main.py` file.
+Please be sure that you have installed the liberies listed above
 
 #### Using the libery
 The libery currently just supports the Bitpanda API completly. The implementation of the Bitpanda Pro API will come in future versions.
