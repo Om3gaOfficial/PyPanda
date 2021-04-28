@@ -1,3 +1,4 @@
+
 # PyPanda 0.0.1
 ![](https://img.shields.io/badge/python-3.6-blue.svg) ![](https://img.shields.io/badge/python-3.7-blue.svg) ![](https://img.shields.io/badge/python-3.8-blue.svg) ![](https://img.shields.io/badge/python-3.9-blue.svg)
 
@@ -38,8 +39,8 @@ print(PyPandaClient.getCurrentPrices())
 ```
 ---
 ### Latest changes
-
 Nothing here yet
+
 ---
 ### Contact
 To report issues, bugs, docu corrections or to propose new features use preferably [Github Issues](https://github.com/Om3gaOfficial/PyPanda/issues).
