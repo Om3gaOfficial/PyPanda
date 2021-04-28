@@ -22,7 +22,9 @@ Please be sure that you have installed the liberies listed above
 #### Using the libery
 The libery currently just supports the Bitpanda API completly. The implementation of the Bitpanda Pro API will come in future versions.
 
-##### Bitpanda
+##### Examples
+
+###### Bitpanda
 ```python
 import PyPanda
 
@@ -30,7 +32,7 @@ PyPandaClient = PyPanda.BitPandaClass
 print(PyPandaClient.getWallets("APIKey", True))
 ```
 
-#### Bitpanda Pro
+##### Bitpanda Pro
 ```python
 import PyPanda
   
