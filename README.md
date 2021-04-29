@@ -20,7 +20,7 @@ I am currently working to publish this libery on [PyPi](https://pypi.org/) then 
 Please be sure that you have installed the liberies listed above
 
 #### Using the libery
-The libery currently just supports the Bitpanda API completly. The implementation of the Bitpanda Pro API will come in future versions.
+The libery currently just supports the Bitpanda API completly. The implementation of the Bitpanda Pro API will come in future versions. But please see the `CHANGELOG.md` file for further information about alle changes.
 
 ##### Examples
 
