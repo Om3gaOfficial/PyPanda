@@ -16,7 +16,7 @@ The `pypanda.py` file uses only two liberies at the moment.
 ---
 ### How to use
 #### Installation
-I am currently working to publish this libery on [PyPi](https://pypi.org/) then you should be able to use `pip install pypanda`. Until then please just clone the Github Repo or use `pypanda.py` file.
+I am currently working to publish this libery on [PyPi](https://pypi.org/) then you should be able to use `pip install pypanda`. Until then please just clone the Github Repo or use `pip install git+https://github.com/Om3gaOfficial/PyPanda.git`.
 Please be sure that you have installed the liberies listed above
 
 #### Using the libery
