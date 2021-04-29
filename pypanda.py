@@ -4,6 +4,10 @@
 import requests
 import json
 
+#Declaring the API-version and the Bitpanda-API-URL's
+APIVersion = 1
+BitpandaURL = "https://api.bitpanda.com/v{APIVersion}/"
+BitpandaProURl = "https://api.exchange.bitpanda.com/public/v{APIVersion}/"
 
 #BitPanda Documentation: "https://developers.bitpanda.com/platform/#bitpanda-public-api"
 #URL to generate your Bitpanda API-Key: "https://web.bitpanda.com/apikey"
@@ -17,7 +21,7 @@ class BitPandaClass:
 
     #Function to get all your trades of your Bitpanda-Account | The "APIKey" argument is required
     def getTrades(APIKey):
-        response = requests.get('https://api.bitpanda.com/v1/trades', headers = {'X-API-KEY' : APIKey}).json()
+        response = requests.get(BitpandaURL + 'trades', headers = {'X-API-KEY' : APIKey}).json()
         
         try:
             data = response['data']
@@ -31,7 +35,7 @@ class BitPandaClass:
 
     #Function where all your crypto-wallet info will be returned | The "APIKey" and the "showAll" arguments are required and the "showAll" argument decides whether only the wallets with a 'balance > 0' are displayed
     def getWallets(APIKey, showAll):
-        response = requests.get('https://api.bitpanda.com/v1/wallets', headers = {'X-API-KEY' : APIKey}).json()
+        response = requests.get(BitpandaURL + 'wallets', headers = {'X-API-KEY' : APIKey}).json()
 
         try:
             data = response['data']
@@ -46,7 +50,7 @@ class BitPandaClass:
 
     #Function to get info about your fiat-wallets | The "APIKey" and the "showAll" arguments are required and the "showAll" argument decides whether only the wallets with a 'balance > 0' are displayed
     def getFiatWallets(APIKey, showAll):
-        response = requests.get('https://api.bitpanda.com/v1/fiatwallets', headers = {'X-API-KEY' : APIKey}).json()
+        response = requests.get(BitpandaURL + 'fiatwallets', headers = {'X-API-KEY' : APIKey}).json()
 
         try:
             data = response['data']
@@ -65,7 +69,7 @@ class BitPandaProClass:
 
     #Returing all currents crypto-prices | No arguments are required
     def getCurrentPrices():
-        response = requests.get('https://api.exchange.bitpanda.com/public/v1/market-ticker', headers = {'Accept': 'application/json'}).json()
+        response = requests.get(BitpandaProURl + 'market-ticker', headers = {'Accept': 'application/json'}).json()
 
         try:
             output = []
@@ -78,7 +82,7 @@ class BitPandaProClass:
 
     #Getting the current price of a specific crypto-currency | The "instrument_code" arguments is requiert and you must input a valid crypto-currency-symbol
     def getCurrentPrice(instrument_code):
-        response = requests.get('https://api.exchange.bitpanda.com/public/v1/market-ticker/{instrument_code}', headers = {'Accept': 'application/json'}).json()
+        response = requests.get(BitpandaProURl + 'market-ticker/{instrument_code}', headers = {'Accept': 'application/json'}).json()
 
         try:
             if response['error']:
